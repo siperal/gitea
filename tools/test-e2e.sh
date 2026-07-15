@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-CONTAINER_RUNTIME="${CONTAINER_RUNTIME:-docker}"
+CONTAINER_RUNTIME="${CONTAINER_RUNTIME:-podman}"
 CONTAINER_NAME="gitea-e2e-runner-$$"
 
 free_port() {
